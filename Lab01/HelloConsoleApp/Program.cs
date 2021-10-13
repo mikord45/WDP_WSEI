@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HelloConsoleApp
 {
@@ -21,10 +25,11 @@ namespace HelloConsoleApp
             Console.Write("Podaj swój wiek: ");
             int wiek = Convert.ToInt32(Console.ReadLine());
 
-            if(wiek < 0){
+            if (wiek < 0)
+            {
                 Console.WriteLine("Błędne dane!");
             }
-            else if(wiek < 67)
+            else if (wiek < 67)
             {
                 Console.WriteLine("Do emerytury pozostało {0} lat", 67 - wiek);
             }
@@ -32,7 +37,7 @@ namespace HelloConsoleApp
             {
                 Console.WriteLine("Jesteś emerytem");
             }
-
+            Console.ReadKey();
         }
     }
 }
